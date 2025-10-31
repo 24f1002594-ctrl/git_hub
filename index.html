@@ -1,85 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to My Site</title>
+  <title>Welcome to My GitHub Pages Site</title>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
+    
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       min-height: 100vh;
       display: flex;
-      justify-content: center;
       align-items: center;
-      color: white;
+      justify-content: center;
+      padding: 20px;
     }
-
+    
     .container {
-      text-align: center;
-      padding: 40px;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 20px;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    }
-
-    h1 {
-      font-size: 3em;
-      margin-bottom: 20px;
-      animation: fadeIn 1s ease-in;
-    }
-
-    p {
-      font-size: 1.2em;
-      margin: 15px 0;
-    }
-
-    a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 30px;
       background: white;
-      color: #667eea;
-      text-decoration: none;
-      border-radius: 25px;
-      font-weight: bold;
-      transition: transform 0.3s ease;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      padding: 60px 40px;
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      animation: fadeIn 0.8s ease;
     }
-
-    a:hover {
-      transform: scale(1.05);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    }
-
+    
     @keyframes fadeIn {
       from {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(20px);
       }
-
       to {
         opacity: 1;
         transform: translateY(0);
       }
     }
+    
+    h1 {
+      color: #333;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    p {
+      color: #666;
+      line-height: 1.8;
+      margin-bottom: 15px;
+      font-size: 1.1em;
+    }
+    
+    .email {
+      background: #f7f7f7;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 25px 0;
+      font-family: 'Courier New', monospace;
+      color: #667eea;
+      font-weight: bold;
+    }
+    
+    .links {
+      margin-top: 30px;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    a {
+      text-decoration: none;
+      padding: 12px 30px;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+    
+    .primary-link {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    }
+    
+    .primary-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+    }
+    
+    .secondary-link {
+      background: white;
+      color: #667eea;
+      border: 2px solid #667eea;
+    }
+    
+    .secondary-link:hover {
+      background: #667eea;
+      color: white;
+      transform: translateY(-2px);
+    }
+    
+    .icon {
+      margin-right: 5px;
+    }
   </style>
 </head>
-
 <body>
   <div class="container">
-    <h1>🌟 Welcome to My Site</h1>
-    <p>This is a demonstration of GitHub Pages with custom 404 error handling.</p>
-    <p>📧 Contact: <strong>24f1002594@ds.study.iitm.ac.in</strong></p>
-    <a href="/nonexistent-page">🔍 Test 404 Page</a>
+    <h1>🚀 Welcome to My Site</h1>
+    <p>Hello! This is my GitHub Pages site showcasing a custom 404 error page implementation.</p>
+    <p>Feel free to explore and test the custom error handling.</p>
+    
+    <div class="email">
+      <span class="icon">📧</span> Contact: 24f1002594&#64;ds.study.iitm.ac.in
+    </div>
+    
+    <p>Email: 24f1002594@ds.study.iitm.ac.in</p>
+    
+    <div class="links">
+      <a href="/git_hub/nonexistent-page" class="primary-link">
+        <span class="icon">🔍</span> Test 404 Page
+      </a>
+      <a href="https://github.com" class="secondary-link" target="_blank">
+        <span class="icon">💻</span> GitHub
+      </a>
+    </div>
   </div>
 </body>
-
 </html>
